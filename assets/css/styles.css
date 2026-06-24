@@ -457,6 +457,16 @@ h3 {
   font-size: 18px;
 }
 
+.ceaps-brand {
+  width: min(280px, 54vw);
+  margin: 0 0 22px;
+}
+
+.ceaps-brand img {
+  width: 100%;
+  height: auto;
+}
+
 .text-link {
   color: var(--blue);
   font-size: 13px;
