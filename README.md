@@ -8,7 +8,7 @@ Sitio personal estático de Maximiliano Osorio Requena, listo para publicarse en
 - `assets/css/styles.css`: estilos del sitio.
 - `assets/js/main.js`: navegación móvil y animaciones de aparición.
 - `assets/img/`: foto de perfil y favicon.
-- `assets/docs/cv-maximiliano-osorio.pdf`: CV descargable.
+- `assets/docs/cv-maximiliano-osorio-r.pdf`: CV descargable.
 - `robots.txt`, `sitemap.xml`, `site.webmanifest`: archivos básicos para publicación.
 - `404.html`: página para rutas inexistentes en GitHub Pages.
 
