@@ -1,0 +1,16 @@
+{
+  "name": "Maximiliano Osorio Requena",
+  "short_name": "Maximiliano Osorio",
+  "description": "Economía, políticas públicas, datos e investigación aplicada.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f1e6",
+  "theme_color": "#f8f1e6",
+  "icons": [
+    {
+      "src": "assets/img/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
