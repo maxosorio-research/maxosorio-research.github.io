@@ -404,6 +404,247 @@ h3 {
   color: rgba(255, 250, 242, 0.72);
 }
 
+.jano-section {
+  --jano-bg: #0d1416;
+  --jano-panel: #141d20;
+  --jano-line: #223036;
+  --jano-ink: #e6edec;
+  --jano-muted: #8fa0a2;
+  --jano-teal: #37a79e;
+  --jano-amber: #d9a441;
+  position: relative;
+  overflow: hidden;
+  padding: clamp(82px, 11vw, 148px) clamp(22px, 6vw, 78px) clamp(70px, 9vw, 112px);
+  border-top: 1px solid rgba(217, 164, 65, 0.34);
+  background:
+    linear-gradient(90deg, rgba(13, 20, 22, 0.18), rgba(13, 20, 22, 0.04)),
+    url("../img/jano-background-3840x2160.png") center top / cover no-repeat,
+    var(--jano-bg);
+  color: var(--jano-ink);
+  isolation: isolate;
+}
+
+.jano-layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(300px, 0.84fr) minmax(480px, 1.16fr);
+  gap: clamp(46px, 7vw, 104px);
+  align-items: center;
+}
+
+.jano-copy {
+  max-width: 680px;
+}
+
+.jano-brandline {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+  margin-bottom: 36px;
+}
+
+.jano-symbol {
+  display: block;
+  width: 27px;
+  aspect-ratio: 232.25 / 339;
+  flex: 0 0 auto;
+  background: var(--jano-teal);
+  -webkit-mask: url("../img/jano-symbol.png") center / contain no-repeat;
+  mask: url("../img/jano-symbol.png") center / contain no-repeat;
+}
+
+.jano-wordmark {
+  color: var(--jano-ink);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.jano-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 18px;
+  color: var(--jano-amber);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.jano-status span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: currentColor;
+  box-shadow: 0 0 0 5px rgba(217, 164, 65, 0.11);
+}
+
+.jano-section h2 {
+  max-width: 720px;
+  margin-bottom: 26px;
+  color: var(--jano-ink);
+  font-size: clamp(42px, 5.4vw, 76px);
+  line-height: 0.98;
+}
+
+.jano-section h2 em {
+  color: var(--jano-teal);
+  font-weight: 400;
+}
+
+.jano-lede {
+  max-width: 650px;
+  margin-bottom: 32px;
+  color: var(--jano-muted);
+  font-size: clamp(17px, 1.7vw, 20px);
+  line-height: 1.7;
+}
+
+.jano-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 18px;
+}
+
+.jano-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid var(--jano-teal);
+  border-radius: 7px;
+  background: var(--jano-teal);
+  color: var(--jano-bg);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.jano-button:hover {
+  background: transparent;
+  color: var(--jano-teal);
+  transform: translateY(-2px);
+}
+
+.jano-button:focus-visible {
+  outline-color: var(--jano-teal);
+}
+
+.jano-button svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.7;
+}
+
+.jano-actions > span {
+  color: var(--jano-muted);
+  font-size: 12px;
+}
+
+.jano-reader {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--jano-line);
+  border-radius: 12px;
+  background: var(--jano-panel);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.38);
+  transform: perspective(1200px) rotateY(-1.5deg) rotateX(0.8deg);
+  transform-origin: center;
+}
+
+.jano-reader-preview {
+  position: relative;
+  overflow: hidden;
+  background: #101719;
+}
+
+.jano-reader-preview::after {
+  position: absolute;
+  inset: 0;
+  border: 1px solid rgba(230, 237, 236, 0.05);
+  content: "";
+  pointer-events: none;
+}
+
+.jano-reader-preview img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.jano-reader figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 13px 16px;
+  border-top: 1px solid var(--jano-line);
+  color: var(--jano-muted);
+  font-size: 10px;
+  letter-spacing: 0.055em;
+  text-transform: uppercase;
+}
+
+.jano-reader figcaption span:first-child {
+  color: var(--jano-teal);
+}
+
+.jano-principles {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: clamp(58px, 8vw, 96px);
+  border-top: 1px solid var(--jano-line);
+  border-bottom: 1px solid var(--jano-line);
+}
+
+.jano-principles article {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  min-height: 150px;
+  padding: 28px;
+  border-right: 1px solid var(--jano-line);
+}
+
+.jano-principles article:last-child {
+  border-right: 0;
+}
+
+.jano-principles article > span {
+  color: var(--jano-amber);
+  font-family: var(--serif);
+  font-size: 13px;
+}
+
+.jano-principles h3 {
+  margin-bottom: 8px;
+  color: var(--jano-ink);
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.jano-principles p {
+  margin-bottom: 0;
+  color: var(--jano-muted);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
 .timeline-section {
   background: var(--paper-soft);
 }
@@ -678,6 +919,33 @@ html.enhanced .reveal.visible,
     grid-template-columns: 1fr;
     gap: 10px;
   }
+
+  .jano-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .jano-copy {
+    max-width: 760px;
+  }
+
+  .jano-reader {
+    max-width: 820px;
+    transform: none;
+  }
+
+  .jano-principles {
+    grid-template-columns: 1fr;
+  }
+
+  .jano-principles article {
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid var(--jano-line);
+  }
+
+  .jano-principles article:last-child {
+    border-bottom: 0;
+  }
 }
 
 @media (max-width: 620px) {
@@ -714,10 +982,29 @@ html.enhanced .reveal.visible,
   }
 
   .section,
+  .jano-section,
   .publications-main,
   .contact-section {
     padding-left: 18px;
     padding-right: 18px;
+  }
+
+  .jano-section h2 {
+    font-size: clamp(39px, 11.5vw, 58px);
+  }
+
+  .jano-brandline {
+    margin-bottom: 28px;
+  }
+
+  .jano-reader figcaption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .jano-section {
+    background-position: 62% top;
   }
 
   .card {
